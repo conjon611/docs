@@ -11,8 +11,8 @@ src/dist
 
 # Generated plugin files
 src/pages/deployments.md
-src/pages/ensip/*
 !src/pages/ensip/index.mdx
 src/data/generated/*
 !src/data/generated/.keep
 
+.wrangler
