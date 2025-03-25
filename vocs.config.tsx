@@ -76,20 +76,20 @@ export default defineConfig({
     remarkPlugins: [remarkMermaid],
   },
   head: {
-    // TODO: Ideally this should get injected into <header> for semantics via a remark plugin.
-    // Overriding styles will look the same and is easier for now.
-    // https://vocs.dev/docs/api/config#markdownremarkplugins
-    '/ensip/': (
-      <>
-        <style>{`
-          .vocs_Header {
-            margin-bottom: var(--vocs-space_16) !important;
-            padding-bottom: 0 !important;
-            border-bottom: none !important;
-          }
-        `}</style>
-      </>
-    ),
+    // // TODO: Ideally this should get injected into <header> for semantics via a remark plugin.
+    // // Overriding styles will look the same and is easier for now.
+    // // https://vocs.dev/docs/api/config#markdownremarkplugins
+    // '/ensip/': (
+    //   <>
+    //     <style>{`
+    //       .vocs_Header {
+    //         margin-bottom: var(--vocs-space_16) !important;
+    //         padding-bottom: 0 !important;
+    //         border-bottom: none !important;
+    //       }
+    //     `}</style>
+    //   </>
+    // ),
   },
   sidebar: [
     {
