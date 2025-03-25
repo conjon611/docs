@@ -1,0 +1,122 @@
+[
+  {
+    "text": "ENSIP-1: ENS",
+    "link": "/ensip/1",
+    "number": 1,
+    "status": "final"
+  },
+  {
+    "text": "ENSIP-2: Initial Hash Registrar",
+    "link": "/ensip/2",
+    "number": 2,
+    "status": "obsolete"
+  },
+  {
+    "text": "ENSIP-3: Reverse Resolution",
+    "link": "/ensip/3",
+    "number": 3,
+    "status": "final"
+  },
+  {
+    "text": "ENSIP-4: Support for contract ABIs",
+    "link": "/ensip/4",
+    "number": 4,
+    "status": "final"
+  },
+  {
+    "text": "ENSIP-5: Text Records",
+    "link": "/ensip/5",
+    "number": 5,
+    "status": "final"
+  },
+  {
+    "text": "ENSIP-6: DNS-in-ENS",
+    "link": "/ensip/6",
+    "number": 6,
+    "status": "obsolete"
+  },
+  {
+    "text": "ENSIP-7: Contenthash field",
+    "link": "/ensip/7",
+    "number": 7,
+    "status": "final"
+  },
+  {
+    "text": "ENSIP-8: Interface Discovery",
+    "link": "/ensip/8",
+    "number": 8,
+    "status": "final"
+  },
+  {
+    "text": "ENSIP-9: Multichain Address resolution",
+    "link": "/ensip/9",
+    "number": 9,
+    "status": "final"
+  },
+  {
+    "text": "ENSIP-10: Wildcard Resolution",
+    "link": "/ensip/10",
+    "number": 10,
+    "status": "draft"
+  },
+  {
+    "text": "ENSIP-11: EVM compatible Chain Address Resolution",
+    "link": "/ensip/11",
+    "number": 11,
+    "status": "draft"
+  },
+  {
+    "text": "ENSIP-12: Avatar Text Records",
+    "link": "/ensip/12",
+    "number": 12,
+    "status": "draft"
+  },
+  {
+    "text": "ENSIP-13: SAFE Authentication For ENS",
+    "link": "/ensip/13",
+    "number": 13,
+    "status": "draft"
+  },
+  {
+    "text": "ENSIP-14: On Chain Source Parameter",
+    "link": "/ensip/14",
+    "number": 14,
+    "status": "draft"
+  },
+  {
+    "text": "ENSIP-15: ENS Name Normalization Standard",
+    "link": "/ensip/15",
+    "number": 15,
+    "status": "draft"
+  },
+  {
+    "text": "ENSIP-16: Offchain Metadata",
+    "link": "/ensip/16",
+    "number": 16,
+    "status": "draft"
+  },
+  {
+    "text": "ENSIP-17: Gasless DNS Resolution",
+    "link": "/ensip/17",
+    "number": 17,
+    "status": "draft"
+  },
+  {
+    "text": "ENSIP-18: Profile Text Records",
+    "link": "/ensip/18",
+    "number": 18,
+    "status": "draft"
+  },
+  {
+    "text": "ENSIP-19: EVM-chain Reverse Resolution",
+    "link": "/ensip/19",
+    "number": 19,
+    "status": "draft"
+  },
+  {
+    "text": "ENSIP-20: Wildcard Writing",
+    "link": "/ensip/20",
+    "number": 20,
+    "status": "draft"
+  }
+]

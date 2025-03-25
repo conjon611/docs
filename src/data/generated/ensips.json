@@ -1,0 +1,82 @@
+[
+  {
+    "title": "ENSIP-1: ENS",
+    "status": "Final"
+  },
+  {
+    "title": "ENSIP-2: Initial Hash Registrar",
+    "status": "Obsolete"
+  },
+  {
+    "title": "ENSIP-3: Reverse Resolution",
+    "status": "Final"
+  },
+  {
+    "title": "ENSIP-4: Support for contract ABIs",
+    "status": "Final"
+  },
+  {
+    "title": "ENSIP-5: Text Records",
+    "status": "Final"
+  },
+  {
+    "title": "ENSIP-6: DNS-in-ENS",
+    "status": "Obsolete"
+  },
+  {
+    "title": "ENSIP-7: Contenthash field",
+    "status": "Final"
+  },
+  {
+    "title": "ENSIP-8: Interface Discovery",
+    "status": "Final"
+  },
+  {
+    "title": "ENSIP-9: Multichain Address resolution",
+    "status": "Final"
+  },
+  {
+    "title": "ENSIP-10: Wildcard Resolution",
+    "status": "Draft"
+  },
+  {
+    "title": "ENSIP-11: EVM compatible Chain Address Resolution",
+    "status": "Draft"
+  },
+  {
+    "title": "ENSIP-12: Avatar Text Records",
+    "status": "Draft"
+  },
+  {
+    "title": "ENSIP-13: SAFE Authentication For ENS",
+    "status": "Draft"
+  },
+  {
+    "title": "ENSIP-14: On Chain Source Parameter",
+    "status": "Draft"
+  },
+  {
+    "title": "ENSIP-15: ENS Name Normalization Standard",
+    "status": "Draft"
+  },
+  {
+    "title": "ENSIP-16: Offchain Metadata",
+    "status": "Draft"
+  },
+  {
+    "title": "ENSIP-17: Gasless DNS Resolution",
+    "status": "Draft"
+  },
+  {
+    "title": "ENSIP-18: Profile Text Records",
+    "status": "Draft"
+  },
+  {
+    "title": "ENSIP-19: EVM-chain Reverse Resolution",
+    "status": "Draft"
+  },
+  {
+    "title": "ENSIP-20: Wildcard Writing",
+    "status": "Draft"
+  }
+]

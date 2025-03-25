@@ -13,6 +13,8 @@ src/dist
 src/pages/deployments.md
 !src/pages/ensip/index.mdx
 src/data/generated/*
+!src/data/generated/ensips-sidebar.json
+!src/data/generated/ensips.json
 !src/data/generated/.keep
 
 .wrangler
