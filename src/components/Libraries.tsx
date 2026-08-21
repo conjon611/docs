@@ -166,12 +166,11 @@ const ensLibraries: Language[] = [
   },
 ]
 
-// TODO: Make this a masonry grid
 export function Libraries() {
   return (
-    <div className="grid gap-x-4 gap-y-6 sm:grid-cols-2 xl:grid-cols-3">
+    <div className="columns-1 gap-x-4 sm:columns-2 xl:columns-3">
       {ensLibraries.map((language) => (
-        <div key={language.name} className="h-fit">
+        <div key={language.name} className="mb-6 break-inside-avoid">
           <span className="mb-1 block text-base font-bold">
             {language.name}
           </span>
