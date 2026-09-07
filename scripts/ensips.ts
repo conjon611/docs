@@ -50,16 +50,24 @@ export async function ensips() {
           }
         }
 
+        const status = parseStatus(parsedFrontMatter.ensip.status, file.name)
+
         sidebar.push({
           text: getFirstHeadingToken(mdFile)!.text,
           link: `/ensip/${ensipNumber}`,
           number: ensipNumber,
-          status: parsedFrontMatter.ensip.status,
+          status,
         })
 
-        const authors = parsedFrontMatter.contributors.map((c) => `"${c}"`)
+        // These values come from a fetched markdown file's frontmatter and are
+        // interpolated into JSX that then gets compiled and executed, so they
+        // are escaped rather than pasted in raw. A contributor name containing
+        // a quote would otherwise close the string and inject arbitrary MDX.
+        const authors = parsedFrontMatter.contributors
+          .map((c) => JSON.stringify(String(c)))
+          .join(',')
         const created = parseDate(parsedFrontMatter.ensip.created)
-        const injectedMarkdown = `<EnsipHeader authors={[${authors}]} created="${created}" status="${parsedFrontMatter.ensip.status}" />`
+        const injectedMarkdown = `<EnsipHeader authors={[${authors}]} created={${JSON.stringify(created)}} status={${JSON.stringify(status)}} />`
 
         // Reconstruct markdown file
         const modifiedMarkdown =
@@ -110,6 +118,17 @@ function getFirstHeadingToken(description: string) {
   return tokens.find(
     (token) => token.type === 'heading' && token.depth === 1
   ) as Tokens.Heading | undefined
+}
+
+const ENSIP_STATUSES = ['draft', 'final', 'obsolete'] as const
+
+function parseStatus(status: string, fileName: string) {
+  if (!(ENSIP_STATUSES as readonly string[]).includes(status)) {
+    throw new Error(
+      `ENSIP ${fileName} has an unrecognised status: ${JSON.stringify(status)}`
+    )
+  }
+  return status as (typeof ENSIP_STATUSES)[number]
 }
 
 function parseDate(date: Date | string) {

@@ -12,29 +12,29 @@
   "dependencies": {
     "@cloudflare/pages-plugin-vercel-og": "^0.1.2",
     "@ensdomains/ccip-read-router": "^0.0.6",
-    "@tanstack/react-query": "^5.87.4",
+    "@tanstack/react-query": "^5.102.8",
     "@theguild/remark-mermaid": "^0.3.0",
     "clsx": "^2.1.1",
     "gray-matter": "^4.0.3",
-    "marked": "^16.2.1",
+    "marked": "^16.4.2",
     "react": "latest",
     "react-dom": "latest",
-    "react-icons": "^5.5.0",
-    "react-use-intercom": "^5.5.0",
-    "tailwind-merge": "^3.3.1",
+    "react-icons": "^5.7.0",
+    "react-use-intercom": "^5.8.0",
+    "tailwind-merge": "^3.6.0",
     "tailwindcss": "4.1.13",
-    "use-debounce": "^10.0.6",
-    "viem": "^2.37.5",
-    "vite": "^7.1.5",
+    "use-debounce": "^10.1.1",
+    "viem": "^2.56.3",
+    "vite": "^7.3.6",
     "vocs": "1.0.5",
-    "wagmi": "^2.16.9"
+    "wagmi": "^2.19.5"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
-    "@types/react": "^19.1.13",
-    "prettier": "^3.6.2",
+    "@types/react": "^19.2.18",
+    "prettier": "^3.9.6",
     "prettier-plugin-tailwindcss": "^0.6.14",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   },
   "packageManager": "pnpm@9.15.5",
   "engines": {
@@ -43,6 +43,10 @@
   "pnpm": {
     "patchedDependencies": {
       "vocs@1.0.5": "patches/vocs@1.0.5.patch"
+    },
+    "overrides": {
+      "axios": "^1.20.0",
+      "ws@8": "^8.21.3"
     }
   }
 }
